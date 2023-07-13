@@ -44,6 +44,12 @@ Page({
       url: '/pages/recommendSong/recommendSong',
     })
   },
+  //跳转到歌单页面
+  tomusiclist(){
+    wx.navigateTo({
+      url: '/pages/musiclist/musiclist',
+    })
+  },
   //跳转到搜索页面
   toSearch(){
     wx.navigateTo({
@@ -58,6 +64,7 @@ Page({
   },
   //跳转到歌单歌曲列表页面
   toPlayList(event){
+    //console.log(event)
     wx.navigateTo({
       url: '/pages/playlist/playlist?id=' + event.currentTarget.id
     })

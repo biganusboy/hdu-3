@@ -1,0 +1,30 @@
+<!--pages/musiclist/musiclist.wxml-->
+<view class="titlebox">
+  <view class="txt">热门推荐</view>
+  <view class="txt_r" bindtap="changehot">更多</view>
+</view>
+
+<view class="hotlist clearfix">
+  <block wx:for="{{hotlist}}">
+  <view class="hotitem">
+    <image src="{{item.picUrl}}" id="{{item.id}}" bindtap="toPlayList"></image>
+    <text id="{{item.id}}" bindtap="toPlayList">{{item.name}}</text>
+  </view>
+  </block>
+</view>
+
+<!-- 新歌列表-->
+<view class="titlebox">
+  <view class="txt">新歌推荐</view>
+  <view class="txt_r" bindtap="changenew">更多</view>
+</view>
+<view class="hotlist clearfix">
+  <block wx:for="{{newlist}}">
+  <view class="hotitem">
+    <image src="{{item.picUrl}}" id="{{item.id}}" bindtap="toPlayList"></image>
+    <text id="{{item.id}}" bindtap="toPlayList">{{item.name}}</text>
+  </view>
+  </block>
+</view>
+
+<view class="end">暂无更多歌单</view>

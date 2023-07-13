@@ -8,35 +8,36 @@
     "pages/video/video",
     "pages/login/login",
     "pages/playlist/playlist",
-    "pages/other/other"
+    "pages/other/other",
+    "pages/musiclist/musiclist"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarBackgroundColor": "#2a98f1",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "manster云音乐"
+    "navigationBarTitleText": "韵律同步"
   },
   "tabBar": {
     "color": "#333",
-    "selectedColor": "#d43c33",
+    "selectedColor": "#2a98f1",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "主页",
-        "iconPath": "/static/images/tabs/tab-home.png",
-        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+        "iconPath": "/static/images/tabs/主页3.png",
+        "selectedIconPath": "/static/images/tabs/主页.png"
       },
       {
         "pagePath": "pages/video/video",
         "text": "视频",
-        "iconPath": "/static/images/tabs/tab-video.png",
-        "selectedIconPath": "/static/images/tabs/tab-video-current.png"
+        "iconPath": "/static/images/tabs/视频3.png",
+        "selectedIconPath": "/static/images/tabs/视频1.png"
       },
       {
         "pagePath": "pages/personal/personal",
         "text": "个人",
-        "iconPath": "/static/images/tabs/tab-personal.png",
-        "selectedIconPath": "/static/images/tabs/tab-personal-current.png"
+        "iconPath": "/static/images/tabs/个人1.png",
+        "selectedIconPath": "/static/images/tabs/个人中心.png"
       }
     ]
   },

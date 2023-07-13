@@ -15,7 +15,7 @@
   font-size: 26rpx;
   text-align: center;
   line-height: 60rpx;
-  color: #d43c33;
+  color: #7c7a7a;
   /*flex-grow:可拉伸  flex-shrink:可压缩  flex-basic：当前元素的宽度*/
   /*flex: flex-grow:0,flex-shrink:1,flex-basic:auto*/
   /*flex:1 flex-grow:1,flex-shrink:1,flex-basic:0%*/
@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20%;
+  width: 30%;
 }
 /* 矢量图 */
 .navItem .iconfont{
@@ -50,7 +50,7 @@
   border-radius: 50%;
   text-align: center;
   line-height: 100rpx;
-  background: rgb(240,19,19);
+  background: #2a98f1;
   font-size: 50rpx;
   color: #fff;
   margin: 20rpx 0;

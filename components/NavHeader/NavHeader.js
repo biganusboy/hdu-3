@@ -11,6 +11,10 @@ Component({
     nav:{
       type:String,
       value:'nav'
+    },
+    button:{
+      type:String,
+      value:'button'
     }
   },
 
@@ -25,6 +29,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    tomusiclist(){
+      wx.navigateTo({
+        url: '/pages/musiclist/musiclist',
+      })
+    },
   }
 })

@@ -1,0 +1,66 @@
+/* pages/musiclist/musiclist.wxss */
+.titlebox{
+  height: 100rpx;
+  /* background-color: pink; */
+}
+.titlebox .txt{
+  float: left;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  padding-left: 20rpx;
+  font-weight: 800;
+}
+.titlebox .txt_r{
+  float: right;
+  width: 120rpx;
+  height: 50rpx;
+  border: 1rpx solid #888;
+  text-align: center;
+  color: #888;
+  border-radius: 12rpx;
+  margin-top: 20rpx;
+  line-height: 50rpx;
+}
+
+/*热门推荐*/
+.hotlist{
+  /* height: 500rpx; */
+  /* background: orange; */
+}
+.hotlist .hotitem{
+  width: 180rpx;
+  height: 220rpx;
+  float: left;
+  margin: 35rpx;
+}
+.hotlist .hotitem image{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+}
+.hotlist .hotitem text{
+  color:#888;
+  font-size: 30rpx;
+  width: 180rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+/*伪元素清除浮动*/
+.clearfix::after{
+  content: "";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.end{
+  margin-top: 30rpx;
+  height: 100rpx;
+  color:rgb(71, 70, 70);
+  font-size: 30rpx;
+  text-align: center;
+}

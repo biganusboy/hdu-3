@@ -1,11 +1,11 @@
 <view class="indexContainer">
   <!-- 头部 -->
   <view class="header">
-    <image src="/static/images/video/video.jpg"></image>
+    <image src="/static/images/视频.png"></image>
     <view class="search" bindtap="toSearch">
       搜索歌曲
     </view>
-    <image src="/static/images/logo.png"></image>
+    <image src="/static/images/音乐1.png"></image>
   </view>
 
   <!-- 轮播图 -->
@@ -18,31 +18,27 @@
   <!-- 导航 -->
   <view class="navContainer">
     <view class="navItem">
-      <text class="iconfont icon-tuijian" bindtap="toRecommendSong"></text>
+      <text class="iconfont icon-meirituijian" bindtap="toRecommendSong"></text>
       <text>每日推荐</text>
     </view>
     <view class="navItem">
-      <text class="iconfont icon-icon-"></text>
+      <text class="iconfont icon-yinle" bindtap="tomusiclist"></text>
       <text>歌单</text>
     </view>
     <view class="navItem">
-      <text class="iconfont icon-paixingbang"></text>
+      <text class="iconfont icon-paihangbang_paiming"></text>
       <text>排行榜</text>
     </view>
     <view class="navItem">
       <text class="iconfont icon-diantai"></text>
       <text>电台</text>
     </view>
-    <view class="navItem">
-      <text class="iconfont icon-zhibo"></text>
-      <text>直播</text>
-    </view>
   </view>
 
   <!-- 推荐歌曲 -->
   <view class="recommendContainer">
     <!-- 头部 -->
-    <NavHeader title="推荐歌单" nav="为你精心推荐"></NavHeader>
+    <NavHeader title="推荐歌单" nav="为你精心推荐" button="tomusiclist"></NavHeader>
     <!-- 内容 -->
     <scroll-view class="recommendScroll" enable-flex="true" scroll-x="true">
       <view wx:for="{{recommendList}}" wx:key="id" wx:for-item="recommendItem" class="scrollItem" >
