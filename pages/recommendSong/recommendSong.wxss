@@ -18,7 +18,7 @@
   height: 100rpx;
   text-align: center;
   line-height: 100rpx;
-  color: #B9B3E1;
+  color: #266eb1;
   font-size: 40rpx;
 }
 .date .month {

@@ -6,6 +6,9 @@
   flex-flow: column;
   align-items: center;
 }
+.musicAuthor {
+  font-size: 30rpx;
+}
 /* 底座 */
 .circle {
   position: relative;
