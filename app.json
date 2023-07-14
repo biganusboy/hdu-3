@@ -8,7 +8,9 @@
     "pages/video/video",
     "pages/login/login",
     "pages/playlist/playlist",
-    "pages/other/other"
+    "pages/other/other",
+    "pages/playlist_stadio/playlist_stadio",
+    "pages/radiostation/radiostation"
   ],
   "window": {
     "navigationBarBackgroundColor": "#d43c33",
