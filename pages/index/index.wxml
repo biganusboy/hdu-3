@@ -51,7 +51,7 @@
   <!-- 排行榜 -->
   <view class="topList">
     <!-- 头部 -->
-    <NavHeader title="排行榜" nav="热歌风向标"></NavHeader>
+    <NavHeader title="排行榜" nav="热歌风向标" bindtap="toTopList"></NavHeader>
     <!-- 内容 -->
     <swiper class="topListSwiper" next-margin="100rpx">
       <swiper-item wx:for="{{topList}}" wx:key="name">
