@@ -50,6 +50,13 @@ Page({
       url: '/pages/musiclist/musiclist',
     })
   },
+  //跳转到排行榜页面
+  toTopList(){
+    wx.navigateTo({
+      url: '/pages/topList/topList?getMyListUid=0',
+    })
+  },
+
   //跳转到搜索页面
   toSearch(){
     wx.navigateTo({

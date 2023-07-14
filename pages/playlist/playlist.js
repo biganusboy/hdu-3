@@ -25,7 +25,10 @@ Page({
     })
 
     //获取歌单歌曲
-    this.getPlayList(listid);
+    if(listid){
+      this.getPlayList(listid);
+    }
+    
 
     //订阅来自songDetail页面发布的消息
     PubSub.subscribe('switchMusic',(msg,type) => {

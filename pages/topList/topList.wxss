@@ -1,0 +1,79 @@
+/* pages/topList.wxss */
+/* 头部 */
+.topListContainer .header {
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+}
+/* .topListContainer .header image {
+  width: 100%;
+  height: 100%;
+} */
+.topListContainer .header .date {
+  position: absolute;
+  left: 30%;
+  top:20%;
+
+  width: 300rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #104bca;
+  font-size: 40rpx;
+}
+/* .date .month {
+  font-size: 60rpx;
+} */
+/* 列表 */
+.ListContainer {
+  position: relative;
+  top: -20rpx;
+  padding: 0 20rpx;
+  border-radius: 30rpx;
+  background: #fff;
+}
+/* .listHeader {
+  height: 80rpx;
+  line-height: 80rpx;
+
+} */
+/* .listHeader .changeMore {
+  float: right;
+} */
+/* 歌曲 */
+.listScroll {
+  height: calc(100vh - 120rpx);/*整体高度减去除了scroll-view的元素的高度，即可得到只使得scroll-view元素滑动效果*/
+}
+.scrollItem {
+  display: flex;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.scrollItem image {
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 8rpx;
+}
+.topListInfo {
+  display: flex;
+
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.topListInfo text {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 40rpx;
+  max-width: 400rpx;/*最长文本长度*/
+  white-space: nowrap;/*不允许换行*/
+  overflow: hidden;/*超过部分隐藏*/
+  text-overflow: ellipsis;/*超过部分换为省略号*/
+
+}
+.scrollItem .iconfont{
+  position: absolute;
+  right: 20rpx;
+  width: 160rpx;
+  height: 160rpx;
+  text-align: right;
+}

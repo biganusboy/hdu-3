@@ -11,7 +11,8 @@
     "pages/other/other",
     "pages/musiclist/musiclist",
     "pages/playlist_stadio/playlist_stadio",
-    "pages/radiostation/radiostation"
+    "pages/radiostation/radiostation",
+    "pages/topList/topList"
   ],
   "window": {
     "navigationBarBackgroundColor": "#2a98f1",

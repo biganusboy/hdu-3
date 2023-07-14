@@ -26,7 +26,7 @@
       <text>歌单</text>
     </view>
     <view class="navItem">
-      <text class="iconfont icon-paixingbang"></text>
+      <text class="iconfont icon-paixingbang " bindtap="toTopList"></text>
       <text>排行榜</text>
     </view>
     <view class="navItem">
