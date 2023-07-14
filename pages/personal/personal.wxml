@@ -69,7 +69,7 @@
       </view>
 
       <view class="cardList">
-        <view class="card-item">
+        <view class="card-item" bindtap="toMyList">
           <text class="title">我的音乐</text>
           <text class="more"> > </text>
         </view>

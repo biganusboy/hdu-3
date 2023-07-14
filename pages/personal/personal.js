@@ -22,14 +22,17 @@ Page({
   onLoad: function (options) {
     //读取用户基本信息
     let userInfo = wx.getStorageSync('userInfo');
+    console.log(userInfo);
     if(userInfo){
       //更新用户信息
       this.setData({
         userInfo: JSON.parse(userInfo),
-        isLogin: true
+        isLogin: true,
       })
+      console.log(this.data);
       //播放记录
       this.getUserRecentPlayList(this.data.userInfo.userId)
+
     }
   },
 
@@ -52,6 +55,7 @@ Page({
       recentPlayList: recentPlayList
     })
   },
+
 
   handleTouchStart(event){
     this.setData({
@@ -107,6 +111,16 @@ Page({
       title: '退出登录',
       icon: 'success'
     })
+  },
+
+  async toMyList(){
+    console.log(this.data);
+    if(this.data.isLogin){
+      wx.navigateTo({
+      url: '/pages/topList/topList?getMyListUid=' +this.data.userInfo.userId 
+    })
+    }
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
