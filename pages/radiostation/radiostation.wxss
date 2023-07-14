@@ -64,11 +64,11 @@
   margin-right: 20rpx ;
 }
 
-.RadioStationcontainer .scrollitem .icon{
+.RadioStationcontainer .scrollitem .iconfont{
   position:absolute;
   left: 3%;
-  top:78%;
-  width: 210rpx;
+  top:79%;
+  width: 220rpx;
   height: 45rpx;
   background-color: rgba(179, 177, 177, 0.432);
   border-radius: 40rpx;

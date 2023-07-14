@@ -2,7 +2,7 @@
 <view class="listSongContainer">
   <!-- 头部 -->
   <view class="header">
-    <image src="{{listImg}}"></image>
+    <image src="/static/images/stadio1.jpg"></image>
     <text class="discribe">{{discribe}}</text>
   </view>
   <!-- 列表区域 -->
@@ -14,7 +14,7 @@
     <!-- 歌曲 -->
     <scroll-view scroll-y="true" class="listScroll">
       <view class="scrollItem" wx:for="{{playList}}" wx:key="id" data-index="{{index}}" data-song="{{item}}" bindtap="toSongDetail">
-        <image src="{{item.al.picUrl}}"></image>
+        <image src="{{item.coverUrl}}"></image>
         <view class="musicInfo">
           <text class="musicName">{{item.name}}</text>
           <text class="musicAuthor">{{item.ar[0].name}}</text>

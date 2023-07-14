@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#201011",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "韵律同步电台"
 }

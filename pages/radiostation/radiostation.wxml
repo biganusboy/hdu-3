@@ -14,7 +14,7 @@
   <scroll-view class="statioscroll">
     <view class="scrollitem" wx:for="{{djrecommendList}}" wx:key="id" data-stadio = "{{item}}" bindtap="toPlayList">
       <image src="{{item.picUrl}}"></image>
-      <text class="icon icon-zhibo">{{item.playCount/10000}} w
+      <text class="iconfont icon-zhibo"> {{item.playCount/10000}} w
       </text>
       <view class="stadioinfo">
         <text class="description">{{item.rcmdtext?item.rcmdtext:item.name}}</text>
