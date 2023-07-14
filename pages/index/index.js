@@ -69,6 +69,12 @@ Page({
       url: '/pages/playlist/playlist?id=' + event.currentTarget.id
     })
   },
+  //跳转到电台
+  toRadioStation(event){
+    wx.navigateTo({
+      url: '/pages/radiostation/radiostation?id' + event.currentTarget.id
+    })
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
