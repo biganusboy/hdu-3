@@ -39,9 +39,7 @@
   height: 80rpx;
   line-height: 80rpx;
 }
-.listHeader .changeMore {
-  float: right;
-}
+
 /* 歌曲 */
 .listScroll {
   height: calc(100vh - 380rpx);/*整体高度减去除了scroll-view的元素的高度，即可得到只使得scroll-view元素滑动效果*/

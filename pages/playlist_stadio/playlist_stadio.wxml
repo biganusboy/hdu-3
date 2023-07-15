@@ -8,8 +8,7 @@
   <!-- 列表区域 -->
   <view class="ListContainer">
     <view class="listHeader">
-      <text>播放全部</text>
-      <text class="changeMore">多选</text>
+      <text>电台列表</text>
     </view>
     <!-- 歌曲 -->
     <scroll-view scroll-y="true" class="listScroll">
@@ -19,7 +18,7 @@
           <text class="musicName">{{item.name}}</text>
           <text class="musicAuthor">{{item.ar[0].name}}</text>
         </view>
-        <text class="iconfont icon-icon"></text>
+        <!-- <text class="iconfont icon-icon"></text> -->
       </view>
     </scroll-view>
   </view>
