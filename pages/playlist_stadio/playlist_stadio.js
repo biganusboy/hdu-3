@@ -74,8 +74,8 @@ Page({
         index: index
       })
       //路由跳转传参：query参数
-      const extraParam = 'is_stadio'; // 设置需要传递的参数
-      wx.setStorageSync('extraParam', extraParam); // 将参数存储在本地缓存中
+        // 初始化标志变量
+      
       wx.navigateTo({
         url: '/pages/songDetail/songDetail?song=' + song.mainSong.id
       })

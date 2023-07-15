@@ -53,6 +53,7 @@ Page({
 
     //跳转到歌单歌曲列表页面
     toPlayList(event){
+      // let clicked = true;
       let stadio = event.currentTarget.dataset.stadio;
       console.log(stadio)
       wx.navigateTo({
