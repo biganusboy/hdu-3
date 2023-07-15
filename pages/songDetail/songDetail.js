@@ -135,29 +135,13 @@ Page({
 
   //歌曲播放控制功能
   async musicControl(isPlay,musicId){
+
     if(isPlay){//音乐播放
       //获取音频资源
       let musicLinkData = await request('/song/url',{id: musicId})
       console.log(musicLinkData)
       let musicLink = musicLinkData.data[0].url;
-      if(musicLink.endsWith(".flac")){
-        wx.showToast({
-          title: '目前版本暂不支持该音乐格式',
-          icon: 'none'
-        })
-        this.backgroundAudioManager.pause();
-        return;
-      }
-      if(!musicLink.includes("m7.music"))
-      {
-        wx.showToast({
-          title: '目前版本暂不支持该音乐格式',
-          icon: 'none'
-        })
-        this.backgroundAudioManager.pause();
-        return; 
-      }
-      if(musicLink === null ){
+      if(musicLink === null){
         wx.showToast({
           title: '由于版权或会员问题暂获取不到此资源',
           icon: 'none'
