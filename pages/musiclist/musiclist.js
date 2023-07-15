@@ -22,7 +22,7 @@ Page({
         // console.log(result.data.result)
         var result=result.data.result
         if (sum > result.length){
-          console.log("歌单已加载完毕")
+          //console.log("歌单已加载完毕")
           wx.showLoading({
             title: '歌单已加载完毕',
           })
