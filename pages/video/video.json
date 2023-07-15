@@ -1,9 +1,5 @@
 {
   "usingComponents": {},
-<<<<<<< HEAD
-  "navigationBarTitleText": "韵律同步",
-=======
-  "navigationBarTitleText": "manster视频",
->>>>>>> parent of 819eb71 (Merge branch 'stadio')
+  "navigationBarTitleText": "推荐视频",
   "enablePullDownRefresh": true
 }
