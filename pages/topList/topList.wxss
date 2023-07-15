@@ -61,8 +61,8 @@
   margin-left: 20rpx;
 }
 .topListInfo text {
-  height: 60rpx;
-  line-height: 60rpx;
+  height: 40rpx;
+  line-height: 40rpx;
   font-size: 40rpx;
   max-width: 400rpx;/*最长文本长度*/
   white-space: nowrap;/*不允许换行*/

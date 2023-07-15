@@ -31,15 +31,9 @@ Page({
 
     //获取每日推荐的数据
     if(getMyListUid == 0){
-      wx.setNavigationBarTitle({
-        title: '排行榜',
-      })
       this.getTopList();
     }
     else{
-      wx.setNavigationBarTitle({
-        title: '我的音乐',
-      })
       this.getMyList();
     }
     console.log(getMyListUid);
