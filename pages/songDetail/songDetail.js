@@ -19,6 +19,7 @@ Page({
     lyric: [],//歌词
     lyricTime: 0,//歌词对应的时间
     currentLyric: "",//当前歌词对象
+    sourcePage:"",
   },
 
   /**
@@ -136,12 +137,43 @@ Page({
   //歌曲播放控制功能
   async musicControl(isPlay,musicId){
 
+    function getSourcePage() {
+      const pages = getCurrentPages(); // 获取当前页面栈
+      if (pages.length >= 2) {
+        // 如果页面栈中存在至少两个页面，则表示有来源页面
+        const sourcePage = pages[pages.length - 2]; // 倒数第二个页面为来源页面
+        const sourceRoute = sourcePage.route; // 获取来源页面的路由信息
+        return sourceRoute; // 返回来源页面的路由信息
+      }
+      return ''; // 没有来源页面，返回空字符串或其他默认值
+    }
+  const sourcePage = getSourcePage(); // 获取跳转来源的源页面的路由信息
+  console.log('来源页面：', sourcePage);
     if(isPlay){//音乐播放
       //获取音频资源
       let musicLinkData = await request('/song/url',{id: musicId})
       console.log(musicLinkData)
       let musicLink = musicLinkData.data[0].url;
-      if(musicLink === null){
+      if(sourcePage === 'pages/playlist_stadio/playlist_stadio'){
+        if(musicLink.endsWith(".flac")){
+          wx.showToast({
+            title: '目前版本暂不支持该音乐格式',
+            icon: 'none'
+          })
+          this.backgroundAudioManager.pause();
+          return;
+        }
+        if(!musicLink.includes("m7.music"))
+        {
+          wx.showToast({
+            title: '目前版本暂不支持该音乐格式',
+            icon: 'none'
+          })
+          this.backgroundAudioManager.pause();   
+        return;     }
+      }
+
+      if(musicLink === null ){
         wx.showToast({
           title: '由于版权或会员问题暂获取不到此资源',
           icon: 'none'
@@ -227,6 +259,9 @@ Page({
       }
     }
   },
+
+
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成
