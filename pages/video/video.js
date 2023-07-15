@@ -24,11 +24,8 @@ Page({
   //获取导航数据
   async getVideoGroupListData(){
     let videoGroupListData = await request('/video/group/list');
-    videoGroupListData.data.splice(4,1)
-    videoGroupListData.data.splice(6,5)
-    //console.log(videoGroupListData)
     this.setData({
-      videoGroupList: videoGroupListData.data.slice(0,14),
+      videoGroupList: videoGroupListData.data.slice(0,20),
       navId: videoGroupListData.data[0].id
     })
     this.getVideoList(this.data.navId);
@@ -56,7 +53,6 @@ Page({
       return;
     }
     let VideoListData = await request('/video/group',{id: navId});
-    //console.log(VideoListData)
     if(VideoListData.datas.length === 0){
       wx.showToast({
         title: '暂无推荐视频',
