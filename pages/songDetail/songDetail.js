@@ -140,22 +140,25 @@ Page({
       let musicLinkData = await request('/song/url',{id: musicId})
       console.log(musicLinkData)
       let musicLink = musicLinkData.data[0].url;
-      if(musicLink.endsWith(".flac")){
-        wx.showToast({
-          title: '目前版本暂不支持该音乐格式',
-          icon: 'none'
-        })
-        this.backgroundAudioManager.pause();
-        return;
-      }
-      if(!musicLink.includes("m7.music"))
-      {
-        wx.showToast({
-          title: '目前版本暂不支持该音乐格式',
-          icon: 'none'
-        })
-        this.backgroundAudioManager.pause();
-        return; 
+      const extraParam = wx.getStorageSync('extraParam');
+      if(extraParam === 'is_stadio'){
+        if(musicLink.endsWith(".flac")){
+          wx.showToast({
+            title: '目前版本暂不支持该音乐格式',
+            icon: 'none'
+          })
+          this.backgroundAudioManager.pause();
+          return;
+        }
+        if(!musicLink.includes("m7.music"))
+        {
+          wx.showToast({
+            title: '目前版本暂不支持该音乐格式',
+            icon: 'none'
+          })
+          this.backgroundAudioManager.pause();
+          return; 
+        }
       }
       if(musicLink === null ){
         wx.showToast({
