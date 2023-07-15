@@ -122,7 +122,7 @@
   margin-top: 90rpx;
   padding: 0 30rpx;
   position:relative;
-  background: #fff;
+  background: #f5f5f5;
   padding-bottom: 20rpx;
 }
 
